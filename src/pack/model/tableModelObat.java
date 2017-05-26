@@ -32,15 +32,15 @@ public class tableModelObat extends AbstractTableModel {
     public String getColumnName(int column) {
         switch (column) {
             case 0:
-                return "Kode_Barang";
+                return "Kode Obat";
             case 1:
-                return "Nama_Barang";
+                return "Nama Obat";
             case 2:
-                return "Kategori";
+                return "Kategori Obat";
             case 3:
-                return "Jenis";
+                return "Jenis Packaging";
             case 4:
-                return "Harga";
+                return "Harga Obat";
             default:
                 return null;
         }

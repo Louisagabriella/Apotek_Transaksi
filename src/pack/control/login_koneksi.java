@@ -20,7 +20,8 @@ public class login_koneksi {
     public static Connection GetConnection() throws SQLException {
         if (koneksi == null) {
             Driver driver = new Driver();
-            koneksi = (Connection) DriverManager.getConnection("jdbc:mysql://localhost/toko? zeroDateTimeBehavior=convertToNull", "root", "");
+            koneksi = (Connection) DriverManager.getConnection
+                      ("jdbc:mysql://localhost/toko? zeroDateTimeBehavior=convertToNull", "root", "");
         }
         return koneksi;
     }
